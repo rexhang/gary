@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name        去除灰色滤镜
-// @namespace   org.glavo
+// @namespace   https://blog.rexhang.com
 // @version     0.1
 // @license     Apache 2.0
-// @author      Glavo
+// @author      Rex Hang
 // @description 去除 Bilibili、AcFun、知乎、简书、百度贴吧、京东等网站的哀悼灰色滤镜。
 // @match       *://*.zhihu.com/*
 // @match       *://*.jianshu.com/*
