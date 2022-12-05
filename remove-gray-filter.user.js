@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        去除灰色滤镜
-// @namespace   https://blog.rexhang.com
+// @namespace   https://github.com/rexhang/remove-gray-filter
 // @version     1.0.0
 // @license     Apache 2.0
 // @author      Rex Hang
@@ -11,6 +11,7 @@
 // @match       *://*.acfun.cn/*
 // @match       *://*.baidu.com/*
 // @match       *://*.jd.com/*
+// @match       *://*.163.com/*
 // @grant       GM_addStyle
 // ==/UserScript==
 
