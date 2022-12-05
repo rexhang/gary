@@ -16,7 +16,7 @@
 
 
 // https://stackoverflow.com/a/46516659/7659948
-// reasele
+// release https://github.com/rexhang/remove-gray-filter/blob/main/remove-gray-filter.user.js
 GM_addStyle ( `
     html {
         filter:grayscale(0) !important;
