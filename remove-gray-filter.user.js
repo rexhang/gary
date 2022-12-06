@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name        去除灰色滤镜
+// @name        去除灰色滤镜 - By RexHang
 // @namespace   https://github.com/rexhang/remove-gray-filter
-// @version     1.0.3
+// @version     1.0.4
 // @license     Apache 2.0
-// @author      Rex Hang
+// @author      RexHang
 // @description 去除 Bilibili、AcFun、知乎、简书、百度贴吧、京东等网站的哀悼灰色滤镜。
 // @match       *://*.zhihu.com/*
 // @match       *://*.jianshu.com/*
@@ -30,4 +30,4 @@ GM_addStyle ( `
     if (!isBaidu) return;
     const grayDom = document.getElementsByClassName('big-event-gray')[0];
     grayDom.classList.remove('big-event-gray')
-})()
+})();
