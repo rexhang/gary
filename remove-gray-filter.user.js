@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        去除灰色滤镜
 // @namespace   https://github.com/rexhang/remove-gray-filter
-// @version     1.0.2
+// @version     1.0.3
 // @license     Apache 2.0
 // @author      Rex Hang
 // @description 去除 Bilibili、AcFun、知乎、简书、百度贴吧、京东等网站的哀悼灰色滤镜。
@@ -23,8 +23,11 @@ GM_addStyle ( `
         filter:grayscale(0) !important;
         -webkit-filter:grayscale(0) !important;
     }
-    #wrapper .s-skin-container {
-        filter:grayscale(0) !important;
-        -webkit-filter:grayscale(0) !important;
-    }
 ` );
+
+(function(){
+    const isBaidu = location.host.indexOf('baidu.com') >= 0;
+    if (!isBaidu) return;
+    const grayDom = document.getElementsByClassName('big-event-gray')[0];
+    grayDom.classList.remove('big-event-gray')
+})()
