@@ -3,7 +3,7 @@
 // @namespace   https://github.com/rexhang/remove-gray-filter
 // @homepage    https://github.com/rexhang/remove-gray-filter/releases
 // @supportURL  https://stackoverflow.com/a/46516659/7659948
-// @version     1.0.5
+// @version     1.0.7
 // @license     MIT
 // @author      RexHang
 // @description 去掉Bilibili、AcFun、知乎、简书、百度贴吧、京东等网站的哀悼灰色滤镜效果
@@ -29,7 +29,7 @@ GM_addStyle ( `
 ` );
 
 (function(){
-    const isBaidu = location.host.indexOf('baidu.com') > = 0;
+    const isBaidu = location.host.indexOf('baidu.com') >= 0;
     if (!isBaidu) return;
     const grayDom = document.getElementsByClassName('big-event-gray')[0];
     grayDom.classList.remove('big-event-gray');
